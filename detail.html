@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>光之饗宴</title>
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<!--=========================漢堡選單&手機選單=============================-->
+	<div class="mobileBar">
+		<ul>
+			<li>
+				<input type="checkbox"  class="checkbox_menu" id="checkbox_menu">
+				<label class="han_menu" for="checkbox_menu">
+					<span class="han han_top"></span>
+					<span class="han han_mid"></span>
+					<span class="han han_btm"></span>
+				</label>
+				<label class="checkbox_backdrop" for="checkbox_menu"></label>
+				<div class="nav_content">
+					<div class="nav_wrap">
+					<input type="checkbox" id="SubmenuControl">
+					<a class="nav_a" href="#">
+						線上購物
+						<label class="sub_menu_btn" for="SubmenuControl">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+						</label>
+					</a>
+
+
+					<div class="sub_menu_content">
+						<input type="checkbox" id="light01">
+						<a href="#" class="sub_a">
+							吸頂燈
+						<label class="sub_menu_btn" for="light01">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+						</label>
+						</a>
+						<div class="sub_light01">
+							<a href="shopping.html" class="light01_a">
+								半吸頂燈
+							</a>
+							<a href="shopping.html" class="light01_a">
+								水晶吸頂燈
+							</a>
+							<a href="shopping.html" class="light01_a">
+								LED吸頂燈
+							</a>
+						</div>
+
+
+						<input type="checkbox" id="light02">
+						<a href="#" class="sub_a">
+							吊燈
+						<label class="sub_menu_btn2" for="light02">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+						</label>
+						</a>
+						<div class="sub_light02">
+							<a href="shopping.html" class="light02_a">
+								吊燈
+							</a>
+							<a href="shopping.html" class="light02_a">
+								水晶吊燈
+							</a>
+							<a href="shopping.html" class="light02_a">
+								LED吊燈
+							</a>
+						</div>
+
+						<input type="checkbox" id="light03">
+						<a href="#" class="sub_a">
+							壁燈
+						<label class="sub_menu_btn3" for="light03">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+						</label>
+						</a>
+						<div class="sub_light03">
+							<a href="shopping.html" class="light03_a">
+								室內壁燈
+							</a>
+							<a href="shopping.html" class="light03_a">
+								戶外壁燈
+							</a>
+						</div>
+
+						<input type="checkbox" id="light04">
+						<a href="#" class="sub_a">
+							吊扇燈
+						<label class="sub_menu_btn4" for="light04">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+						</label>
+						</a>
+						<div class="sub_light04">
+							<a href="shopping.html" class="light04_a">
+								52吋吊扇燈
+							</a>
+							<a href="shopping.html" class="light04_a">
+								60吋吊扇燈
+							</a>
+						</div>
+
+						<input type="checkbox" id="light05">
+						<a href="#" class="sub_a">
+							光源
+						<label class="sub_menu_btn5" for="light05">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+						</label>	
+						</a>
+						<div class="sub_light05">
+							<a href="shopping.html" class="light05_a">
+								燈泡
+							</a>
+							<a href="shopping.html" class="light05_a">
+								崁燈
+							</a>
+							<a href="shopping.html" class="light05_a">
+								T8燈管
+							</a>
+						</div>
+
+					</div>
+
+					<input type="checkbox" id="SubmenuControl_m">
+					<a class="nav_a" href="#">
+						會員專區
+					<label class="sub_menu_member" for="SubmenuControl_m">
+							<i class="fa fa-plus plus_icon"></i>
+							<i class="fa fa-minus minus_icon"></i>
+					</label>	
+					</a>
+					<div class="sub_menu_memberContent">
+						<a href="member.html" class="sub_a">
+							會員登入
+						</a>
+						<a href="register.html" class="sub_a">
+							會員註冊
+						</a>
+						<a href="forget.html" class="sub_a">
+							忘記密碼
+						</a>
+					</div>
+
+					<a class="nav_a" href="about.html">
+						關於我們
+					</a>
+					<a class="nav_a" href="contact.html">
+						聯絡我們
+					</a>
+					</div>
+				</div>
+
+			</li>
+
+			<input type="checkbox" id="mobileSearch">
+			<li>
+				<label for="mobileSearch" class="mobileSearch">
+				<img src="images/mSearch.png" alt="">
+				</label>
+			</li>
+			<form class="searchBox" action="javascript:void()">
+				<div class="wrap">
+				<input type="text" name="search" placeholder="SEARCH">
+				</div>
+				<span class="line"></span>
+				<input type="image" name="submit" src="images/searchIcon.png" >
+			</form>
+
+			<input type="checkbox" id="mobileLogin">
+			<li>
+				<label for="mobileLogin" class="mobileLogin">
+				<img src="images/mLogin.png" alt="">
+				</label>
+			</li>
+			<ul class="loginBox">
+				<li><a href="member.html">會員登入</a></li>
+				<li><a href="register.html">會員註冊</a></li>
+				<li><a href="forget.html">忘記密碼</a></li>
+			</ul>	
+
+			<li>
+				<a href="#"><img src="images/mCart.png" alt=""></a>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div id="mLogo">
+			<a href="index.html">
+				<img src="images/logo.png" alt="">
+			</a>		
+	</div>
+	<!--=========================桌機LOGO和選單=============================-->
+	<header>
+		<div class="container">
+			<div class="rightIcon">
+				<a href="#">
+					<label for="checkbox_login" class="checkbox_login">
+					<span class="login">會員登入</span>
+					</label>
+				</a>
+				<a href="#">
+					<span class="cart">購物車</span>
+				</a>
+			</div>
+		</div>
+		<input type="checkbox" id="checkbox_login">
+		<div class="work-section" id="work">
+			<div class="login-html">
+				<ul class="tabs-nav">
+					<li><a href="#work01">登入</a></li>
+					<li><a href="#work02">會員註冊</a></li>
+				</ul>
+				<div class="section-body">
+					<section class="tabs-panel" id="work01">
+						<div class="group">
+							<label for="user" class="label">*帳號</label>
+							<input id="user" type="text" class="input">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">*密碼</label>
+							<input id="pass" type="password" class="input" data-type="password">
+						</div>
+						
+						<div class="group">
+							<input type="submit" class="button" value="登入">
+						</div>
+						<div class="hr"></div>
+						<div class="foot-lnk">
+							<a href="forget.html" class="m_forget">忘記密碼?</a>
+						</div>
+					</section>
+					<section class="tabs-panel" id="work02">
+						<div class="group">
+							<label for="user" class="label">*帳號</label>
+							<input id="user" type="text" class="input">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">*密碼</label>
+							<input id="pass" type="password" class="input" data-type="password">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">*確認密碼</label>
+							<input id="pass" type="password" class="input" data-type="password">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">*中文名</label>
+							<input id="pass" type="text" class="input">
+						</div>
+						<div class="group">
+							<input type="submit" class="button" value="註冊">
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<label class="checkbox_loginBack" for="checkbox_login"></label>
+		<div id="logo">
+			<a href="index.html">
+				<img src="images/logo.png" alt="">
+			</a>		
+		</div>
+		<div class="search-wrap clearfix">
+			<div id="sb-search" class="sb-search">
+				<form action="#">
+					<input type="search" class="sb-search-input" onKeyup="buttonUp();" placeholder="SEARCH" value="" name="search" id="search">
+					<input type="submit" class="sb-search-submit" value="">
+					<span class="sb-icon-search"><i class="fa fa-search"></i></span>
+				</form>
+			</div>
+		</div>
+		<div id="container">
+			<div id="wrapper">
+				<div id="holder">
+				
+					<div id="shop">
+						<ul class="using">
+							<li class="pad"><a href="shopping.html"><span>線上購物</span></a>
+								<div class="sub-wrapper-shop">
+									<div class="sub-con">
+										<div class="sub-hol clearfix">
+											<div class="sub-l">
+												<h3>吸頂燈</h3>
+												<ul>
+													<li><a href="detail.html">半吸頂燈</a></li>
+													<li><a href="detail.html">水晶吸頂燈</a></li>
+													<li><a href="detail.html">LED吸頂燈</a></li>
+												</ul>
+											</div>
+
+											<div class="sub-l">
+												<h3>吊燈</h3>									
+												<ul>
+													<li><a href="detail.html">吊燈</a></li>
+													<li><a href="detail.html">水晶吊燈</a></li>
+													<li><a href="detail.html">LED吊燈</a></li>
+												</ul>
+											</div>
+											<div class="sub-l">
+												<h3>壁燈</h3>
+												<ul>
+													<li><a href="detail.html">室內壁燈</a></li>
+													<li><a href="detail.html">戶外壁燈</a></li>
+												</ul>
+											</div>
+											<div class="sub-l">
+												<h3>吊扇燈</h3>
+												<ul>
+													<li><a href="detail.html">52吋吊扇燈</a></li>
+													<li><a href="detail.html">60吋吊扇燈</a></li>
+												</ul>
+											</div>										
+											<div class="sub-l">
+												<h3>光源</h3>
+												<ul>
+													<li><a href="detail.html">燈泡</a></li>
+													<li><a href="detail.html">崁燈</a></li>
+													<li><a href="detail.html">T8燈管</a></li>
+												</ul>
+											</div>
+											<div class="sub-img">
+												<a href="#"><img src="images/innerImg.jpg" alt=""></a>
+												<a href="#"><img src="images/innerImg2.jpg" alt=""></a>
+												<a href="#"><img src="images/innerImg2.jpg" alt=""></a>
+											</div>	
+
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div id="member">
+						<ul>
+							<li class="pad"><a href="member.html"><span>會員專區</span></a></li>
+							<div class="sub-wrapper-member">
+								<ul>
+									<li><a href="member.html">會員登入</a></li>
+									<li><a href="register.html">會員註冊</a></li>
+									<li><a href="forget.html">忘記密碼</a></li>
+								</ul>	
+							</div>
+						</ul>
+					</div>
+					<div id="about">
+						<ul>
+							<li class="pad"><a href="about.html"><span>關於我們</span></a></li>
+						</ul>
+					</div>
+					<div id="contact">
+						<ul>
+							<li class="pad"><a href="contact.html"><span>聯絡我們</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	 <div class="space"></div> 
+	<!--=========================靜態Banner=============================-->
+	<div class="container">
+		<div class="shoppingBanner">
+			<img src="images/shoppingBanner.jpg" alt="">
+		</div>
+		<div class="bread">    <!--=============麵包屑選單==============-->
+			<p>
+				<a href="index.html">首頁</a>/
+				<a href="shopping.html">線上購物</a>
+			</p>
+		</div>
+	</div>
+	<!--=========================側邊選單&商品=============================-->
+	<div class="wrapper clearfix">
+		<div class="side">		<!--=============側邊選單==============-->
+			<nav class="menu">
+				<li class="item" id="ceiling">
+					<a href="javascript:void()" class="btn minus">吸頂燈</a>
+					<div class="smenu open">
+						<a href="#">半吸頂燈</a>
+						<a href="#">水晶吸頂燈</a>
+						<a href="#">LED吸頂燈</a>
+					</div>
+				</li>
+
+				<li class="item" id="hang">
+					<a href="javascript:void()" class="btn">吊燈</a>
+					<div class="smenu">
+						<a href="#">吊燈</a>
+						<a href="#">水晶吊燈</a>
+						<a href="#">LED吊燈</a>
+					</div>
+				</li>
+
+				<li class="item" id="wall">
+					<a href="javascript:void()" class="btn">壁燈</a>
+					<div class="smenu">
+						<a href="#">室內壁燈</a>
+						<a href="#">戶外壁燈</a>
+					</div>
+				</li>
+
+				<li class="item" id="fan">
+					<a href="javascript:void()" class="btn">吊扇燈</a>
+					<div class="smenu">
+						<a href="#">50吋吊扇燈</a>
+						<a href="#">60吋吊扇燈</a>
+					</div>
+				</li>
+
+				<li class="item" id="bulb">
+					<a href="javascript:void()" class="btn">光源</a>
+					<div class="smenu">
+						<a href="#">燈泡</a>
+						<a href="#">崁燈</a>
+						<a href="#">T8燈管</a>
+					</div>
+				</li>
+			</nav>
+		</div>
+		<div class="myProduct">
+			<div class="picBox">
+				<div class="bigPic">
+					<img src="images/merchandise.jpeg" alt="" id="gallery">
+				</div>
+				<div class="smallBox">
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic1" checked>
+						<label for="pic1">
+							<img src="images/merchandise.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic2">
+						<label for="pic2">
+							<img src="images/merchandise2.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic3">
+						<label for="pic3">
+							<img src="images/merchandise3.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic4">
+						<label for="pic4">
+							<img src="images/merchandise4.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic5">
+						<label for="pic5">
+							<img src="images/merchandise5.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic6">
+						<label for="pic6">
+							<img src="images/merchandise6.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+					<div class="smallPic">
+						<input type="radio" name="choicePic" id="pic7">
+						<label for="pic7">
+							<img src="images/merchandise7.jpeg" alt="" onClick="showPic(),timer()">
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="clearFix"></div>
+
+			<div class="proInfo">
+				<h2 class="pro_name">牛津單吊燈</h2>
+				<p class="price">NT$ 690 <span>原價 NT$1080</span></p>
+				<ul class="infoList">
+					<li>特色
+						<span>純手工雕刻與繪製，所以每隻動物的造型與網路圖片不完全相同，網路購買請以收到的實物為準，若是非常追求商品完美品質之買家建議直接到門市購買。</span>
+					</li>
+					<li>編號<span>A0309</span></li>
+					<li>尺寸<span>長寬35cm 高40.5cm</span></li>
+					<li>材質<span>金屬烤漆</span></li>
+					<li>備註<span>簍空燈體</span></li>
+					<li>庫存<span id="stock">(請選擇款式)</span></li>
+					<li class="style">款式
+						<span>
+							<ul class="color">
+								<li>
+									<input type="radio" name="color" id="color1" value="1">
+									<label for="color1" title="黑色"></label>
+								</li>
+								<li>
+									<input type="radio" name="color" id="color2" value="2">
+									<label for="color2" title="黃色"></label>
+								</li>
+							</ul>
+						</span>
+					</li>
+					<li class="quant">數量
+						<span>
+							<div class="border">
+								<div id="addPlus" onClick="addPlus()">＋</div>
+								<input type="number" name="quantity" min="1" id="quantity" value="">
+								<div id="addMinus" onClick="addMinus()">－</div>
+							</div>
+						</span>
+					</li>
+				</ul>
+				<div class="infoBtn">
+					<input type="button" name="okgogo" id="addCart" value="加入購物車">
+					<input type="button" name="okgogo" id="shopNow" value="立即購買">
+					<input type="button" name="okgogo" id="addCart2" value="加入購物車">
+					<input type="button" name="okgogo" id="shopNow2" value="立即購買">
+					<input type="button" name="okgogo" id="addTrack" value="加入追蹤">
+				</div>
+				<div class="maybeLike clearfix">
+					<p>你可能還喜歡...</p>
+					<a href="#" class="col-xs-4 col-sm-4"><img src="images/merchandise7.jpeg" alt=""></a>
+					<a href="#" class="col-xs-4 col-sm-4"><img src="images/merchandise6.jpeg" alt=""></a>
+					<a href="#" class="col-xs-4 col-sm-4"><img src="images/merchandise5.jpeg" alt=""></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<!--=========================頁尾Footer=============================-->
+<footer>
+	<div class="footerContent clearfix">
+		<div class="navi col-sm-4">
+			<div class="content">
+				<div class="text">
+					<h3>網站導覽</h3>
+					<a href="shopping.html">線上購物</a>
+					<a href="member.html">會員專區</a>
+					<a href="about.html">關於我們</a>
+					<a href="contact.html">聯絡我們</a>
+				</div>
+			</div>
+		</div>
+		<div class="cont col-sm-4">
+			<div class="content">
+				<div class="text">
+					<h3>聯絡我們</h3>
+					<p>週一至週日AM09:00~PM18:00</p>
+					<p>(03) 4812345</p>
+					<p>inte2rjnv@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="social col-sm-4">
+			<div class="content">
+				<div class="text">
+					<h3>社群資訊</h3>
+					<ul class="footerIcon">
+						<li>
+							<a href="#">
+								<img src="images/Facebook.png" alt="" id="fb">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/Line.png" alt="" id="line">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/Instagram.png" alt="" id="insta">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>光之饗宴有限公司 版權所有&copy;copyright 2018 All Rights Reserved.</p>	
+	</div>
+</footer>
+	<!--=========================置頂=============================-->
+	<div class="gotop gototop hvr-float-shadow">
+		<a href="#"><span class="topArrow">TOP</span></a>
+	</div>
+</div>
+</body>
+</html>
+<script>
+$(function(){
+	/*點擊.gototop時,緩慢往上滑*/
+	$('.gototop').on('click', function(e){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0,
+		}, 1000);
+	});
+
+	/*捲軸位置在視窗小於100px時,將.gototop隱藏*/	
+	window.addEventListener('scroll',function(){
+		if( document.documentElement.scrollTop < 100){
+			$('.gototop').css({
+				'opacity':'0'
+		});
+			$('.gototop a').css({
+				'cursor':'default'
+		})
+		}else{
+			$('.gototop').css({
+				'opacity':'1',
+		});		
+			$('.gototop a').css({
+				'cursor':''
+		})
+		}
+	});
+});
+</script>
+
+<script>
+	function buttonUp(){
+         var valux = $('.sb-search-input').val(); 
+            valux = $.trim(valux).length;
+            if(valux !== 0){
+                $('.sb-search-submit').css('z-index','999')
+            } else{
+                $('.sb-search-input').val(''); 
+                $('.sb-search-submit').css('z-index','-999');
+            }
+    }
+    
+ $(document).ready(function(){
+        var submitIcon = $('.sb-icon-search');
+        var submitInput = $('.sb-search-input');
+        var searchBox = $('.sb-search');
+        var isOpen = false;
+         
+         $(document).mouseup(function(){
+	        if(isOpen == true){
+	        submitInput.val('');
+	        $('.sb-search-submit').css('z-index','-999');
+	        submitIcon.click();
+	        }
+        });   
+    
+        searchBox.mouseup(function(){
+            return false;
+        });
+                
+        submitIcon.click(function(){
+            if(isOpen == false){
+                searchBox.addClass('sb-search-open');
+                isOpen = true;
+            } else {
+                searchBox.removeClass('sb-search-open');
+                isOpen = false;
+            }
+          });
+
+});
+</script>
+
+
+<script>
+$("#checkbox_menu").click(function() {
+   if($("#checkbox_menu").prop("checked")) {
+   		$('body,html').animate({
+			scrollTop: 0,
+		}, 0);
+    	$('body').css('overflow','hidden');
+    	$("#mobileSearch,#mobileLogin,#SubmenuControl,#SubmenuControl_m,#light01,#light02,#light03,#light04,#light05").prop("checked",false);//把核方框的property取消勾選
+   }else{
+   		$('body').css('overflow','');
+    	$("#SubmenuControl,#SubmenuControl_m,#light01,#light02,#light03,#light04,#light05").prop("checked",false);
+	}		
+});
+
+$("#mobileSearch").click(function() {
+	if($("#mobileSearch").prop("checked")){
+		$("#mobileLogin").prop("checked",false);
+	}else{
+		$("#mobileLogin").prop("checked");
+	}
+});
+
+$("#mobileLogin").click(function() {
+	if($("#mobileLogin").prop("checked")){
+		$("#mobileSearch").prop("checked",false);
+	}else{
+		$("#mobileSearch").prop("checked");
+	}
+});
+
+$("#SubmenuControl").click(function() {
+	if($("#SubmenuControl").prop("checked")) {
+		$("#SubmenuControl_m,#light01,#light02,#light03,#light04,#light05").prop("checked",false);
+	}else{
+		$("#light01,#light02,#light03,#light04,#light05").prop("checked");
+		$("#SubmenuControl_m").prop("checked");
+	}
+});
+
+$("#SubmenuControl_m").click(function() {
+	if($("#SubmenuControl_m").prop("checked")){
+		$("#SubmenuControl").prop("checked",false);
+	}else{
+		$("#SubmenuControl").prop("checked");
+	}
+});
+
+</script>
+
+<!--Tab的Javascript-->
+<script>
+	$(function(){
+		$('#work').each(function(){
+			var $tabList = $(this).find('.tabs-nav'),
+				$tabAnchors = $tabList.find('a'),
+				$tabsPanels = $(this).find('.tabs-panel');
+
+			$tabList.on('click','a',function(event){
+				event.preventDefault();
+
+				var $this = $(this);
+
+				if($this.hasClass('active')){
+					return;
+				}
+
+				$tabAnchors.removeClass('active');
+				$this.addClass('active');
+
+				$tabsPanels.hide();
+				$($this.attr('href')).show();
+			});
+
+			$tabAnchors.eq(0).trigger('click');
+		});
+	});
+</script>
+
+<script>
+	$(function(){
+		$('#hang .smenu,#wall .smenu,#fan .smenu,#bulb .smenu').hide();
+		$('#ceiling > .btn').addClass('minus');
+		$('head').append("<style>#ceiling .smenu a:first-child:before{ opacity:1 }</style>");
+		$('#ceiling > .btn').on('click',function(){
+			if($('#ceiling .smenu').is(':hidden')){//若為隱藏
+				$('#ceiling .smenu').slideDown();//就slidedown
+				$('#ceiling > .btn').addClass('minus');//並加上class="minus"
+			}else{
+				$('#ceiling .smenu').slideUp();
+				$('#ceiling > .btn').removeClass('minus');
+			}
+			
+		});
+		$('#hang > .btn').on('click',function(){
+			if($('#hang .smenu').is(':hidden')){
+				$('#hang .smenu').slideDown();
+				$('#hang > .btn').addClass('minus');
+			}else{
+				$('#hang .smenu').slideUp();
+				$('#hang > .btn').removeClass('minus');
+			}
+		});
+		$('#wall > .btn').on('click',function(){
+			if($('#wall .smenu').is(':hidden')){
+				$('#wall .smenu').slideDown();
+				$('#wall > .btn').addClass('minus');
+			}else{
+				$('#wall .smenu').slideUp();
+				$('#wall > .btn').removeClass('minus');
+			}
+		});
+		$('#fan > .btn').on('click',function(){
+			if($('#fan .smenu').is(':hidden')){
+				$('#fan .smenu').slideDown();
+				$('#fan > .btn').addClass('minus');
+			}else{
+				$('#fan .smenu').slideUp();
+				$('#fan > .btn').removeClass('minus');
+			}
+		});
+		$('#bulb > .btn').on('click',function(){
+			if($('#bulb .smenu').is(':hidden')){
+				$('#bulb .smenu').slideDown();
+				$('#bulb > .btn').addClass('minus');
+			}else{
+				$('#bulb .smenu').slideUp();
+				$('#bulb > .btn').removeClass('minus');
+			}
+		});
+	});
+</script>
+
+<script>
+	$('#addTrack').click(function(){
+		window.location.assign('#');
+	});
+	$('#quantity').val(1).removeAttr('disabled');//若有數量，則取消attr
+	max=10;
+	$('input[type="radio"] ').change(function(){
+		if( $(this).attr('value') == '1'){//若選擇為第一個
+			$("#shopNow2,#addCart2").css('display','none');
+			$("#shopNow,#addCart").css('display','inline-block');
+			$("#shopNow,#addCart").click(function(){
+				window.location.assign('#');
+			});
+			$('.quant').css('display','block');//顯示
+			$('#stock').text('10');	
+			max=10;
+			$('#shopNow').css({
+				'cursor': 'pointer',
+				'backgroundColor': ''
+			}).val('立即購買');	
+			$('#addCart').css({
+				'cursor': 'pointer',
+				'backgroundColor': ''
+			}).val('加入購物車');
+			
+		}else if( $(this).attr('value') == '2'){//若選擇第二個}
+			$('.quant').css('display','none');//去除
+			$('#stock').text('缺貨中');	
+			$('#shopNow2').css({
+				'cursor': 'not-allowed',
+				'backgroundColor':'#4d4d4d'		
+			}).val('缺貨中');
+			$('#addCart2').css({
+				'cursor': 'pointer',
+				'backgroundColor':'#4d4d4d'
+			}).val('貨到通知');
+			$("#shopNow,#addCart").css('display','none');
+			$("#shopNow2,#addCart2").css('display','inline-block');
+		};
+	});
+	var quantity=document.getElementById('quantity');
+	function addPlus(){
+		var total=quantity.value;
+		if(total<max){
+		total++;}
+		quantity.value=total;
+	}
+	function addMinus(){
+		var total=quantity.value;
+		if(total>1){
+		total--;}
+		quantity.value=total;
+	}
+
+</script>
+
+<script>
+	var gallery,timerId,opacity;
+	gallery=document.getElementById('gallery');//大圖
+		
+	function timer(){
+		opacity=0;
+		timerId=setInterval(opa,30); //設定變數timerId每0.03秒呼叫opa函數
+	}
+	function opa(){
+		opacity+=0.05;//每次加單位0.05
+		if(opacity>=1){
+			opacity=1;
+			clearInterval(timerId);//停止執行
+		}
+		gallery.style.opacity=opacity; //大圖的opacity=opa函數所執行的opacity
+	}
+	function showPic(e){
+		var obj=e? event.srcElement:event.target;//點擊指定的小圖
+		gallery.src=obj.src;//指派給大圖
+		gallery.style.opacity=0;//大圖的style為透明
+	}
+</script>
+
+
+<!--Tab的Javascript-->
+<script>
+	$(function(){
+		$('#work').each(function(){
+			var $tabList = $(this).find('.tabs-nav'),
+				$tabAnchors = $tabList.find('a'),
+				$tabsPanels = $(this).find('.tabs-panel');
+
+			$tabList.on('click','a',function(event){
+				event.preventDefault();
+
+				var $this = $(this);
+
+				if($this.hasClass('active')){
+					return;
+				}
+
+				$tabAnchors.removeClass('active');
+				$this.addClass('active');
+
+				$tabsPanels.hide();
+				$($this.attr('href')).show();
+			});
+
+			$tabAnchors.eq(0).trigger('click');
+		});
+	});
+</script>
